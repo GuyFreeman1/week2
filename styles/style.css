@@ -1,0 +1,271 @@
+@font-face 
+{
+    font-family: 'roboto regular';
+    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+@font-face 
+{
+    font-family: 'roboto medium';
+    src: url(../fonts/Roboto-Medium.ttf) format('truetype');
+}
+@font-face 
+{
+    font-family: 'roboto light';
+    src: url(../fonts/Roboto-Light.ttf) format('truetype');
+}
+@font-face 
+{
+    font-family: 'roboto light italic';
+    src: url(../fonts/Roboto-LightItalic.ttf) format('truetype');
+}
+@font-face 
+{
+    font-family: 'roboto thin';
+    src: url(../fonts/Roboto-Thin.ttf) format('truetype');
+}
+@font-face 
+{
+    font-family: 'roboto bold';
+    src: url(../fonts/Roboto-Bold.ttf) format('truetype');
+}
+
+body
+{
+    height:100vh;
+    margin:0;
+}
+
+header
+{
+    background-color:#1f2937;
+}
+
+input
+{
+    background-color:#3882F6;
+    border:solid 1px #F9FAF8;
+    border-radius:0.4vw;
+    color:#F9FAF8;
+    width:7vw;
+    cursor:pointer;
+}
+
+logo
+{
+    font-family:'roboto bold';
+    font-size:6vh;
+    color:#E5E7EB;
+}
+
+nav
+{
+    display:flex;
+    justify-content: space-between;
+    padding-left:2%;
+    padding-top:2%;
+}
+.nav-links
+{
+    width:50vw;
+    display:flex;
+    justify-content: space-around;
+}
+
+.nav-item
+{
+    text-decoration:none;
+    font-family:'roboto regular';
+    font-size:2vh;
+    color:#F9FAF8;
+}
+
+.header-section
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:2%;
+    color:#F9FAF8;
+}
+
+.header-article
+{
+    width:30vw;
+}
+
+.header-article-title
+{
+    font-family: 'roboto bold';
+    font-size:48px;
+    font-weight: extra-bold;
+    color:#F9FAF8
+}
+
+.header-article-text
+{
+    font-family: 'roboto light';
+    font-size:18px;
+    color:#E5E7EB;
+}
+
+.header-image
+{
+    height:30vh;
+    width:30vw;
+}
+
+info
+{
+    display:block;
+    font-family:'roboto bold';
+    font-size:3vh;
+    text-align:center;
+    padding:2%;
+}
+
+main
+{
+    display:flex;
+    justify-content: center;
+}
+
+figure
+{
+    height:10vw;
+    width:10vw;
+    padding-bottom:2%;
+}
+figcaption
+{
+    font-family:'roboto light';
+    font-size:1.5vh;
+}
+
+.figure-image
+{
+    border:solid 2px #3882F6;
+    border-radius:0.3vw;
+    height:8vw;
+    width:8vw;
+}
+
+.quote
+{
+    background-color:#E5E7EB;
+    font-family: 'roboto light italic';
+    font-size:3vw;
+    color:#1F2937;
+    text-align: center;
+    height:20vh;
+    padding-top:2vw;
+    padding-bottom:4vw;
+}
+
+.button
+{
+    display:flex;
+    justify-content: center;
+}
+
+.offer
+{
+    display:flex;
+    align-items: center;
+}
+
+action
+{
+    display:flex;
+    justify-content: space-between;
+    background-color:#3882F6;
+    border-radius:0.5vw;
+    font-family: 'roboto medium';
+    text-align:center;
+    color:#F9FAF9;
+    vertical-align: middle;
+    width:30vw;
+    margin:2%;
+    padding:2%;
+}
+
+call
+{
+    display:block;
+    font-size:3vh;
+    text-align:left;
+}
+
+signup
+{
+    font-size:1.5vh;
+    text-align:left;
+}
+
+footer
+{
+    color:#F8FAF9;
+    background-color:#1F2937;
+    font-family: 'roboto thin';
+    font-size:3vh;
+    text-align:center;
+    padding:0.8vw;
+}
+footer:before
+{
+    content:'huakai travel'
+}
+
+@media screen and (max-width:600px)
+{
+    .header-section
+    {
+        flex-direction:column;
+    }
+
+    .header-image
+    {
+        margin:1vw;
+        width:50vw;
+    }
+
+    input
+    {
+        width:20vw;
+    }
+
+    main
+    {
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .figure-image
+    {
+        height:15vw;
+        width:15vw;
+    }
+
+    .quote
+    {
+        margin:8vh;
+        padding:5vw;
+        height:11vh;
+    }
+
+    action
+    {
+        flex-direction:column;
+        width:73vw;
+    }
+
+    call
+    {
+        text-align:center;
+    }
+
+    .offer 
+    {
+        display:flex;
+        justify-content: center;
+    }
+}
